@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+    --dark-blue: #26445C;
+    --button-red: #ED1D24;
+    --card-beige: #F2EEE1;
+
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #E3E3E3;
+}
+
+h2 {
+    font-family: 'open sans', sans serif;
+    font-size: 1.8rem;
+    color: var(--dark-blue);
+}
+
+.wrapper {
+    background-color: white;
+    max-width: 1024px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 20px 1px rgb(173, 169, 169);
+}
