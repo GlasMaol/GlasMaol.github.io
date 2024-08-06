@@ -1,5 +1,9 @@
 import React from 'react'
-import NavItem from './NavItem'
+import NavItemHem from './navItems/NavItemHem'
+import NavItemFront from './navItems/NavItemFront'
+import NavItemProj from './navItems/NavItemProj'
+import NavItemOm from './navItems/NavItemOm'
+import NavItemKont from './navItems/NavItemKont'
 import TitleItem from './TitleItem'
 
 function Header() {
@@ -8,11 +12,11 @@ function Header() {
             <section className='navCont'>
                 <nav>
                     <ul>
-                        <NavItem />
-                        <NavItem />
-                        <NavItem />
-                        <NavItem />
-                        <NavItem />
+                        <NavItemHem />
+                        <NavItemFront />
+                        <NavItemProj />
+                        <NavItemOm />
+                        <NavItemKont />
                     </ul>
                 </nav>
             </section>

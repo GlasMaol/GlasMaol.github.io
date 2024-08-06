@@ -14,7 +14,7 @@ margin: 1rem auto;
 }
 
 header {
-  background-color: rgb(211, 160, 85);
+  background-color: #576495;
   min-height: 4rem;
   width: 100%;
   display: flex;
@@ -33,4 +33,9 @@ header {
 ul {
 display: flex;
 flex-direction: column;
+}
+
+li {
+  display: flex;
+  flex-direction: row;
 }
