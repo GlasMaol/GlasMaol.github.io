@@ -1,9 +1,4 @@
 import React from 'react'
-import NavItemHem from './navItems/NavItemHem'
-import NavItemFront from './navItems/NavItemFront'
-import NavItemProj from './navItems/NavItemProj'
-import NavItemOm from './navItems/NavItemOm'
-import NavItemKont from './navItems/NavItemKont'
 import TitleItem from './TitleItem'
 
 function Header() {
@@ -11,13 +6,16 @@ function Header() {
         <header>
             <section className='navCont'>
                 <nav>
-                    <ul>
-                        <NavItemHem />
-                        <NavItemFront />
-                        <NavItemProj />
-                        <NavItemOm />
-                        <NavItemKont />
-                    </ul>
+                    <div className="navicon">
+                        <div></div>
+                    </div>
+
+                    <a>HEM</a>
+                    <a>FRONTEND</a>
+                    <a>PROJEKT</a>
+                    <a>OM</a>
+                    <a>KONTAKT</a>
+
                 </nav>
             </section>
             <section className='titleCont'>
