@@ -28,6 +28,19 @@ header {
   text-align: right;
 }
 
+main {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.frontendSection {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+
 body {
   font: 100% Roboto, sans-serif;
   background: url(./assets/backgroundOne.jpg) 50% 50% no-repeat;
