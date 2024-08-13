@@ -4,39 +4,26 @@ import { useEffect, useRef } from 'react';
 function Main() {
     const frontendSectionRef = useRef(null);
 
+
     useEffect(() => {
-        const observer = new IntersectionObserver(
-            ([entry]) => {
-                if (entry.isIntersecting) {
-                    frontendSectionRef.current.classList.add('visible');
-                }
-            },
-            {
-                root: null,
-                rootMargin: '0px',
-                threshold: 0.8,
-            }
-        );
-
-        if (frontendSectionRef.current) {
-            observer.observe(frontendSectionRef.current);
-        }
-
-        return () => {
-            if (frontendSectionRef.current) {
-                observer.unobserve(frontendSectionRef.current);
+        const handleScroll = () => {
+            if (window.scrollY > 0) {
+                frontendSectionRef.current.classList.add('visible');
             }
         };
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll)
+        }
     }, []);
-
 
     return (
         <main>
-            <section className='frontendSection glassEffect' ref={frontendSectionRef}>
+            <section className='frontendSection glassEffectDark' ref={frontendSectionRef}>
                 <article className='frontendDesc glassEffect'>
                     <h1 className='h1ContentTitle'>FRONTEND</h1>
-                    <h3 className='h3ContentSubTitle'>Resan som frontendare</h3>
-                    <p>Här kommer mer text snart</p>
+                    <h3 className='h3ContentSubTitle'>Resan till frontendare</h3>
+                    <p></p>
                 </article>
                 <article className='logoGrid glassEffect'>
                     <div><img src="./src/assets/html-logo.png" alt="HTML Logo" className='logoImage' /></div>

@@ -43,13 +43,23 @@ main {
   flex-direction: column;
 }
 
+.glassEffectDark {
+  position: relative;
+  padding: 20px;
+  border-radius: 2px;
+  background: rgba(10, 32, 55, 0.5);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: .5rem;
+}
+
 .glassEffect {
   position: relative;
   padding: 20px;
   border-radius: 2px;
-  background: rgba(255, 255, 255, 0.2) !important;
-  backdrop-filter: blur(10px) !important;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   margin: .5rem;
 }
 
@@ -68,7 +78,7 @@ color: var(--h3-text-colour);
   display: flex;
   flex-direction: row;
   opacity: 0;
-  transform: translateX(-100px);
+  transform: translateY(100px);
   transition: opacity .5s ease, transform .5s ease;
 }
 
@@ -91,17 +101,16 @@ padding: 10px;
   position: relative;
   padding: 20px;
   border-radius: 2px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.35);
   backdrop-filter: blur(10px);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 .logoGrid img {
-  max-width: 100%; /* Ensure images don't exceed their container */
-  max-height: 100%; /* Ensure images fit within the grid cell */
+  max-width: 100%;
+  max-height: 100%;
 }
 
-/* Ensure each grid item centers its content */
 .logoGrid > div {
   display: flex;
   align-items: center;
