@@ -107,9 +107,6 @@ main {
   max-width: 98%;
 
   position: relative;
-  border-radius: 2px;
-  background: rgba(255, 255, 255, 0.35);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 .logoGrid>div {
@@ -121,6 +118,7 @@ main {
 
 .logoImage {
   width: 90%;
+  max-width: 150px;
   height: auto;
   object-fit: cover;
 }
@@ -151,7 +149,7 @@ main {
 }
 
 .rightArticle {
-  padding-top: 5rem;
+  padding-top: 1rem;
 }
 
 .projectPic {
@@ -165,7 +163,7 @@ main {
 footer {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
   min-height: 50px;
 }
@@ -206,6 +204,13 @@ footer a:hover .linkedinLogo {
 
 footer a:hover .githubLogo {
   transform: scale(1.2);
+}
+
+.footerP {
+  color: var(--h1-text-colour);
+  font-family: var(--title-font-family);
+  font-size: 2rem;
+  padding-top: 1rem;
 }
 
 body {

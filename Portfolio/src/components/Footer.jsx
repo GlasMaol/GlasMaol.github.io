@@ -4,7 +4,8 @@ function Footer() {
     return (
         <footer>
             <section>
-                <h1 className='h1ContentTitle'>kontaktinfo</h1>
+                <p className='footerP'>allyjmccann@gmail.com</p>
+                <p className='footerP'>0768000202</p>
             </section>
             <section className='socialamedierContainer'>
                 <a href="https://www.linkedin.com/in/alistairmccann/" target="_blank" rel="noopener noreferrer">
@@ -13,9 +14,6 @@ function Footer() {
                 <a href="https://github.com/GlasMaol" target="_blank" rel="noopener noreferrer">
                     <img className='githubLogo' src="./src/assets/Github-logo.png" alt="Github logo" />
                 </a>
-            </section>
-            <section>
-                <h1 className='h1ContentTitle'>github</h1>
             </section>
         </footer>
     )

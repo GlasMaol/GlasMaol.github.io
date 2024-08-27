@@ -26,7 +26,7 @@ function Main() {
                     <p></p>
                     <a href="">läs mer...</a>
                 </article>
-                <article className='logoGrid glassEffect'>
+                <article className='logoGrid'>
                     <div><img src="./src/assets/html-logo.png" alt="HTML Logo" className='logoImage' /></div>
                     <div><img src="./src/assets/CSS-Logo.png" alt="CSS Logo" className='logoImage' /></div>
                     <div><img src="./src/assets/Javascript-logo.png" alt="JavaScript Logo" className='logoImage' /></div>
@@ -38,18 +38,18 @@ function Main() {
 
             <section className='projektOmSection glassEffectDark'>
                 <section className='projectSection glassEffect'>
-                    
-                        <article className='leftArticle'>
-                            <h1 className='h1ContentTitle'>PROJEKT</h1>
-                            <h3 className='marginBottom'>Hjärteprojekt</h3>
-                            <p>Här kommer mer text snart</p>
-                            <a href="">läs mer...</a>
-                        </article>
-                        <article className='rightArticle'>
-                                <img className='projectPic marginBottom' src="./src/assets/alpineSportlogo-whitetext.svg" alt="Alpine Sport logo" />
-                                <img className='projectPic' src="./src/assets/alpinesport-main.png" alt="picture of website" />
-                        </article>
-                    </section>
+
+                    <article className='leftArticle'>
+                        <h1 className='h1ContentTitle'>PROJEKT</h1>
+                        <h3 className='marginBottom'>Hjärteprojekt</h3>
+                        <p>Under några år har jag drivit ett hobbyföretag där jag servar, reparerar och monterar skidor och snowboards. Under tiden som jag gått frontendutbildningen har jag försökt få lite tid över att arbeta på en hemsida till företaget. <br></br><br></br>Den håller på att ta form, men eftersom vi lär och nya tekniker hela tiden är det svårt att låta bli att gå tillbaka och strukturera om hela projektet så den passar in i det vi just arbetat med. Men nu har vi kommit så pass lång i utbildningen så jag kan fokusera på att producera en slutgiltig sida.</p>
+                        <a href="">läs mer...</a>
+                    </article>
+                    <article className='rightArticle'>
+                        <img className='projectPic marginBottom' src="./src/assets/alpineSportlogo-whitetext.svg" alt="Alpine Sport logo" />
+                        <img className='projectPic' src="./src/assets/alpinesport-main.png" alt="picture of website" />
+                    </article>
+                </section>
                 <article className='omSection glassEffect'>
                     <h1 className='h1ContentTitle'>OM</h1>
                     <h3>Vem är jag</h3>
@@ -57,8 +57,8 @@ function Main() {
                         <article className='leftArticle'>
 
                         </article>
-                        <article className='rightArticle'> 
-
+                        <article className='rightArticle'>
+                            <img src="" alt="profile picture" />
                         </article>
                     </section>
                 </article>
