@@ -16,11 +16,12 @@
 }
 
 .app {
-width: 95%;
-margin: 1rem auto;
+  width: 100%;
+  margin: 0 auto;
 }
 
 header {
+  padding: 1rem;
   min-height: 40rem;
   width: 100%;
   display: flex;
@@ -50,7 +51,6 @@ main {
   background: rgba(10, 32, 55, 0.5);
   backdrop-filter: blur(10px);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin: .5rem;
 }
 
 .glassEffect {
@@ -64,17 +64,20 @@ main {
 }
 
 .h1ContentTitle {
+  align-self: flex-start;
+  margin-bottom: 20px;
   font-family: var(--title-font-family);
-color: var(--h1-text-colour);
-font-size: 3em;
+  color: var(--h1-text-colour);
+  font-size: 3em;
 }
 
 .h3ContentSubTitle {
   font-family: var(--title-font-family);
-color: var(--h3-text-colour);
+  color: var(--h3-text-colour);
 }
 
 .frontendSection {
+  width: 100%;
   display: flex;
   flex-direction: row;
   opacity: 0;
@@ -87,31 +90,29 @@ color: var(--h3-text-colour);
   transform: translateX(0);
 }
 
-.frontendDesc, .logoGrid {
-flex: 1;
-padding: 10px;
+.frontendDesc,
+.logoGrid {
+  flex: 1;
+  padding: 10px;
 }
 
 .logoGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: 10px;
   width: 100%;
-  position: relative;
+
   padding: 20px;
+  margin: 10px auto;
+  max-width: 98%;
+
+  position: relative;
   border-radius: 2px;
   background: rgba(255, 255, 255, 0.35);
-  backdrop-filter: blur(10px);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
-.logoGrid img {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.logoGrid > div {
+.logoGrid>div {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -119,16 +120,92 @@ padding: 10px;
 
 
 .logoImage {
-  width: 100%;
+  width: 90%;
   height: auto;
   object-fit: cover;
 }
 
 .projektOmSection {
-  margin: auto;
   width: 100%;
   display: flex;
   flex-direction: row;
+}
+
+.projectSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.projectSection,
+.omSection {
+  flex: 1;
+  padding: 10px;
+}
+
+.leftArticle,
+.rightArticle {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.rightArticle {
+  padding-top: 5rem;
+}
+
+.projectPic {
+  width: 100%;
+}
+
+.marginBottom {
+  margin-bottom: 1rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 50px;
+}
+
+footer a {
+  background: none;
+}
+
+footer a:hover {
+  background: none;
+}
+
+.socialamedierContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+}
+
+.linkedinLogo {
+  max-width: 200px;
+  max-height: 100px;
+  object-fit: contain;
+  margin-right: .5rem;
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+footer a:hover .linkedinLogo {
+  transform: scale(1.2);
+}
+
+.githubLogo {
+  max-width: 100px;
+  margin-left: .5rem;
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+footer a:hover .githubLogo {
+  transform: scale(1.2);
 }
 
 body {
@@ -215,13 +292,13 @@ a:active {
 }
 
 .h1TitleText {
-color: #DECFB2;
-font-family: montserrat;
-font-size: 5em;
-line-height: .8;
-padding-bottom: .2rem;
-position: relative;
-overflow: hidden;
+  color: #DECFB2;
+  font-family: montserrat;
+  font-size: 5em;
+  line-height: .8;
+  padding-bottom: .2rem;
+  position: relative;
+  overflow: hidden;
 }
 
 .h1TitleText::after {
@@ -243,20 +320,18 @@ overflow: hidden;
   left: -150%;
   width: 100%;
   height: 100%;
-background: linear-gradient(
-  120deg,
-  rgba(255, 255, 255, 0) 0%,
-  rgba(255, 255, 255, 0.2) 20%,
-  rgba(255, 255, 255, 0.5) 60%,
-  rgba(255, 255, 255, 0) 100%
-);
-transform: skewX(-20deg);
-transition: all 0.5s;
+  background: linear-gradient(120deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.2) 20%,
+      rgba(255, 255, 255, 0.5) 60%,
+      rgba(255, 255, 255, 0) 100%);
+  transform: skewX(-20deg);
+  transition: all 0.5s;
 }
 
 .h1TitleText:hover::before {
-animation: shimmer 1s forwards;
-opacity: 1;
+  animation: shimmer 1s forwards;
+  opacity: 1;
 }
 
 .h2TitleText {
@@ -279,10 +354,30 @@ opacity: 1;
   0% {
     left: -150%;
   }
+
   50% {
     left: 150%;
   }
+
   100% {
     left: -150%;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .frontendSection,
+  .projektOmSection {
+    flex-direction: column;
+  }
+
+  .logoGrid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .leftArticle,
+  .rightArticle {
+    width: 100%;
   }
 }
