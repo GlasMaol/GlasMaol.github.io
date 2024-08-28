@@ -1,5 +1,6 @@
 import React from 'react'
 import TitleItem from './TitleItem'
+import ScrollArrow from './ScrollArrow'
 
 function Header() {
     return (
@@ -21,7 +22,7 @@ function Header() {
             <section className='titleCont'>
                 <TitleItem />
             </section>
-
+                <ScrollArrow />
         </header>
     )
 }

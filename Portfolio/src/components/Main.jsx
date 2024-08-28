@@ -55,7 +55,9 @@ function Main() {
                     <h3>Vem är jag</h3>
                     <section>
                         <article className='leftArticle'>
-
+<p>
+    
+</p>
                         </article>
                         <article className='rightArticle'>
                             <img src="" alt="profile picture" />
