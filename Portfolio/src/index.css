@@ -373,6 +373,16 @@ a:active {
 
 @media (max-width: 768px) {
 
+  header {
+    flex-direction: column;
+  }
+
+  .titleCont {
+    text-align: left;
+    transform: translateY(-300px);
+    max-width: 380px;
+  }
+
   .frontendSection,
   .projektOmSection {
     flex-direction: column;
