@@ -30,3 +30,50 @@ body {
   margin: 0;
   overflow-x: hidden;
 }
+
+@media (max-width: 768px) {
+
+  header,
+  footer {
+      flex-direction: column;
+  }
+
+  .titleCont {
+      max-width: 230px;
+      margin: 0 auto;
+      text-align: right;
+      transform: translateY(-200px);
+  }
+
+  .h1TitleText {
+      font-size: 3em;
+  }
+
+  .h2TitleText {
+      font-size: 1.5em;
+  }
+
+  .frontendSection,
+  .projektOmSection,
+  .projectSection {
+      flex-direction: column;
+  }
+
+  .logoGrid {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+  }
+
+  .logoImage {
+      max-width: 70px;
+  }
+
+  .leftArticle,
+  .rightArticle {
+      width: 100%;
+  }
+
+  .projectPic {
+      padding: 0 2rem 2rem 2rem;
+  }
+}
