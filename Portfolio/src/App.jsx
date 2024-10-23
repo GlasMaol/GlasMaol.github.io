@@ -5,7 +5,6 @@ import ProjectsPage from "./pages/projects/ProjectsPage"
 import { Routes, Route } from "react-router-dom";
 import AboutPage from "./pages/about/AboutPage";
 
-
 function App() {
 
   return (
