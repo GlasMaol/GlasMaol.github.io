@@ -1,11 +1,14 @@
 import React from 'react'
+import '../footer/footer.css'
+import { Link } from 'react-router-dom'
 
 function Footer() {
     return (
         <footer>
             <section>
-                <p className='footerP'>allyjmccann@gmail.com</p>
-                <p className='footerP'>0768000202</p>
+                <Link to="/contact">
+                    <p className='footerP'>CONTACT</p>
+                </Link>
             </section>
             <section className='socialamedierContainer'>
                 <a href="https://www.linkedin.com/in/alistairmccann/" target="_blank" rel="noopener noreferrer">

@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import '../styles/scrollArrow.css'
+import '../scrollArrow/scrollArrow.css'
 
 function ScrollArrow() {
     useEffect(() => {

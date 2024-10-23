@@ -1,0 +1,45 @@
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    min-height: 50px;
+    margin-top: 5rem;
+}
+
+footer a {
+    background: none;
+}
+
+footer a:hover {
+    background: none;
+}
+
+.socialamedierContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+}
+
+.linkedinLogo {
+    max-width: 200px;
+    max-height: 100px;
+    object-fit: contain;
+    margin-right: .5rem;
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+.githubLogo {
+    max-width: 100px;
+    margin-left: .5rem;
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+.footerP {
+    color: var(--h1-text-colour);
+    font-family: var(--title-font-family);
+    font-size: 2rem;
+    padding-top: 1rem;
+}

@@ -1,0 +1,161 @@
+main {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.glassEffectDark {
+    position: relative;
+    padding: 20px;
+    border-radius: 2px;
+    background: rgba(10, 32, 55, 0.5);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.glassEffect {
+    position: relative;
+    padding: 20px;
+    border-radius: 2px;
+    background: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    margin: .5rem;
+}
+
+.h1ContentTitle {
+    align-self: flex-start;
+    margin-bottom: 20px;
+    font-family: var(--title-font-family);
+    color: var(--h1-text-colour);
+    font-size: 3em;
+}
+
+.h3ContentSubTitle {
+    font-family: var(--title-font-family);
+    color: var(--h3-text-colour);
+}
+
+.frontendSection {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.frontendDesc,
+.logoGrid {
+    flex: 1;
+    padding: 10px;
+}
+
+.logoGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 100%;
+
+    padding: 20px;
+    margin: 10px auto;
+    max-width: 98%;
+
+    position: relative;
+}
+
+.logoGrid>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoImage {
+    width: 90%;
+    max-width: 150px;
+    height: auto;
+    object-fit: cover;
+}
+
+.projektOmSection {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 5rem;
+}
+
+.projectSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.projectSection,
+.omSection {
+    flex: 1;
+    padding: 10px;
+}
+
+.leftArticle,
+.rightArticle {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.rightArticle {
+    padding-top: 1rem;
+}
+
+.projectPic {
+    width: 100%;
+}
+
+.marginBottom {
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+
+    header,
+    footer {
+        flex-direction: column;
+    }
+
+    .titleCont {
+        max-width: 230px;
+        margin: 0 auto;
+        text-align: right;
+        transform: translateY(-200px);
+    }
+
+    .h1TitleText {
+        font-size: 3em;
+    }
+
+    .h2TitleText {
+        font-size: 1.5em;
+    }
+
+    .frontendSection,
+    .projektOmSection,
+    .projectSection {
+        flex-direction: column;
+    }
+
+    .logoGrid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .logoImage {
+        max-width: 70px;
+    }
+
+    .leftArticle,
+    .rightArticle {
+        width: 100%;
+    }
+
+    .projectPic {
+        padding: 0 2rem 2rem 2rem;
+    }
+}
